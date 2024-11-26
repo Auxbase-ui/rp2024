@@ -65,7 +65,9 @@ for _ in range(100):
 # get the current object pose
 position, quat = bullet_client.getBasePositionAndOrientation(object_id)
 object_pose = Affine(position, quat)
-print(object_pose)
+#print('Objekt Pose:' object_pose)
+print(f'Objekt Pose: {object_pose}')
+
 
 # close the simulation
 bullet_client.disconnect()
